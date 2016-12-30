@@ -62,7 +62,7 @@
     "build:js": "gulp",
     "build:rb:dev": "bundle exec middleman build -e development",
     "build:rb:prod": "bundle exec middleman build -e production",
-    "clean": "rm -rf copy/.* copy/* docs/.* docs/*",
+    "clean": "rm -rf copy/* docs/*",
     "install:js": "yarn install",
     "install:rb": "bundle install",
     "start": "npm-run-all clean -p install:* -p build:**"
