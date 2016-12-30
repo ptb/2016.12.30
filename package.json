@@ -62,9 +62,10 @@
     "build:js": "gulp",
     "build:rb:dev": "bundle exec middleman build -e development",
     "build:rb:prod": "bundle exec middleman build -e production",
+    "clean": "ll docs/",
     "install:js": "yarn install",
     "install:rb": "bundle install",
-    "start": "npm-run-all -p install:* -p build:**"
+    "start": "npm-run-all clean -p install:* -p build:**"
   },
   "version": "2016.12.30"
 }
