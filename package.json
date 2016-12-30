@@ -60,7 +60,8 @@
   },
   "scripts": {
     "build:js": "gulp",
-    "build:rb": "bundle exec middleman build --no-clean",
+    "build:rb:dev": "bundle exec middleman build -e development",
+    "build:rb:prod": "bundle exec middleman build -e production",
     "install:js": "yarn install",
     "install:rb": "bundle install",
     "start": "npm-run-all -p install:* -p build:**"
